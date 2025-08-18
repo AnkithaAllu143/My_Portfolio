@@ -26,6 +26,7 @@
       align-items: center;
       text-align: center;
       color: white;
+      overflow: hidden;
     }
     header::after {
       content: '';
@@ -44,19 +45,16 @@
       font-size: 3rem;
       font-family: 'Playfair Display', serif;
       margin-bottom: 0.3em;
+      letter-spacing: 2px;
     }
     header h2 {
       font-weight: 400;
       margin-bottom: 0.5em;
-    }
-    header .social-icons {
-      margin-top: 1rem;
-    }
-    .social-icons a {
-      margin: 0 10px;
       font-size: 1.5rem;
-      color: white;
-      text-decoration: none;
+      letter-spacing: 3px;
+    }
+    header p {
+      font-size: 1.2rem;
     }
     section {
       padding: 60px 20px;
@@ -68,6 +66,8 @@
       font-family: 'Playfair Display', serif;
       margin-bottom: 30px;
       font-size: 2rem;
+      letter-spacing: 2px;
+      color: #e67e22;
     }
     p, li {
       font-size: 1rem;
@@ -86,12 +86,49 @@
       font-size: 0.9rem;
       color: #999;
     }
+    /* Skill Images Grid */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .skill-item img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 8px;
+      transition: transform 0.2s;
+    }
+    .skill-item:hover {
+      transform: scale(1.1);
+      box-shadow: 0 2px 10px rgba(230, 126, 34, 0.2);
+      background: #fafafc;
+    }
+    .skill-item p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #222;
+      text-align: center;
+    }
     @media (max-width: 768px) {
       header h1 {
         font-size: 2rem;
       }
       header h2 {
         font-size: 1rem;
+      }
+      .skills-grid {
+        gap: 18px;
       }
     }
   </style>
@@ -102,18 +139,15 @@
     <h1>ANKITHA ALLU</h1>
     <p>Frontend Developer</p>
   </header>
-
   <section>
     <h2>Career Objective</h2>
     <p>I am excited to start my career with a company that values new ideas and growth. I want to use my skills and knowledge to make a real difference. I am eager to learn new things, take on challenges, and grow along with the company.</p>
   </section>
-
   <section>
     <h2>Projects</h2>
     <p><span class="highlight">Electricity from Waste Materials:</span> Designed a sustainable energy system using biomass gasification. Developed a working model producing 5V and researched waste-to-energy techniques.</p>
     <p><span class="highlight">Portfolio Website:</span> Created with HTML, CSS, and JavaScript inspired by Amazon Prime. Responsive layout with dark theme and interactive scrolling.</p>
   </section>
-
   <section>
     <h2>Education</h2>
     <ul>
@@ -122,32 +156,55 @@
       <li><strong>AP Residential School, Kadapa</strong> – 9.7 CGPA</li>
     </ul>
   </section>
-
   <section>
     <h2>Technical Skills</h2>
-    <ul>
-      <li><span class="highlight">Languages:</span> HTML5, CSS3, JavaScript, Java</li>
-      <li><span class="highlight">Tools:</span> Git, Eclipse</li>
-      <li><span class="highlight">Productivity:</span> MS Office, Word, Excel, PowerPoint</li>
-    </ul>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+        <p>HTML5</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+        <p>CSS3</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java">
+        <p>Java</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git">
+        <p>Git</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" title="Eclipse">
+        <p>Eclipse</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/color/48/000000/ms-word.png" alt="MS Word" title="MS Word">
+        <p>MS Word</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/color/48/000000/ms-excel.png" alt="MS Excel" title="MS Excel">
+        <p>MS Excel</p>
+      </div>
+      <div class="skill-item">
+        <img src="https://img.icons8.com/color/48/000000/ms-powerpoint.png" alt="MS PowerPoint" title="MS PowerPoint">
+        <p>MS PowerPoint</p>
+      </div>
+    </div>
   </section>
-
   <section>
     <h2>Certifications</h2>
     <p>NPTEL Certification in Internet of Things (IoT)</p>
   </section>
-
   <section>
     <h2>Internships</h2>
     <p><span class="highlight">Cloud Computing:</span> Worked on AWS and Microsoft Azure with real-time projects involving storage, VM deployment, networking, and automation. Gained practical cloud architecture experience.</p>
   </section>
-
-  <section>
-    <h2>Declaration</h2>
-    <p>I hereby declare that all the information given above is true and correct to the best of my knowledge.</p>
-    <p><strong>Signature:</strong> Ankitha Allu</p>
-  </section>
-
   <footer>
     Made by Ankitha Allu
   </footer>
