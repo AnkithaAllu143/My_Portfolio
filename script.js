@@ -1,13 +1,19 @@
-// Small interactivity example
+window.addEventListener("load", () => {
+  let popup = document.getElementById("welcomePopup");
+  let closeBtn = document.querySelector(".close-btn");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const heroBtn = document.querySelector(".btn");
+  // Show popup on load
+  popup.classList.add("show");
 
-  heroBtn.addEventListener("mouseover", () => {
-    heroBtn.textContent = "Let's Go!";
+  // Close popup when clicking "X"
+  closeBtn.addEventListener("click", () => {
+    popup.classList.remove("show");
   });
 
-  heroBtn.addEventListener("mouseout", () => {
-    heroBtn.textContent = "Explore More";
+  // Close popup when clicking outside content
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.classList.remove("show");
+    }
   });
 });
