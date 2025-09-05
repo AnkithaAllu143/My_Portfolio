@@ -1,39 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ankitha Allu | Portfolio</title>
-  <!-- Link CSS -->
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Welcome Popup -->
+  <div id="welcomePopup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h2>Hey! 👋</h2>
+      <p>Welcome to my portfolio</p>
+    </div>
+  </div>
+
+  <!-- Header -->
   <header>
-    <h1 class="logo">Ankitha Allu</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1>Ankitha Allu</h1>
+    <p>Frontend Developer</p>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h2>Hello, I'm <span>Ankitha Allu</span></h2>
-    <p>I am excited to start my career with a company that values new ideas and growth.  
-       I want to use my skills and knowledge to make a real difference.</p>
-    <a href="about.html" class="btn">Explore More</a>
-  </section>
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#internships">Internships</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <!-- About -->
+    <section id="about">
+      <h2>Career Objective</h2>
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-icon"><i class="fas fa-user"></i></span>
+          <div class="card-desc">
+            I am excited to start my career with a company that values new ideas and growth. 
+            I want to use my skills and knowledge to make a real difference. 
+            I am eager to learn new things, take on challenges, and grow along with the company.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-icon"><i class="fas fa-desktop"></i></span>
+          <div class="card-title">Portfolio Website</div>
+          <div class="card-desc">Built a responsive portfolio using HTML, CSS, JS with career, skills, and projects sections.</div>
+        </div>
+        <div class="card">
+          <span class="card-icon"><i class="fas fa-bolt"></i></span>
+          <div class="card-title">Electricity from Waste Materials</div>
+          <div class="card-desc">Developed a model generating electricity from waste. Achieved ~5V proving real-world viability.</div>
+        </div>
+        <div class="card">
+          <span class="card-icon"><i class="fas fa-cloud-sun"></i></span>
+          <div class="card-title">Weather App</div>
+          <div class="card-desc">
+            Created a weather site using HTML, CSS, and JS.<br>
+            <a href="https://ankithaallu143.github.io/Whether-app/" target="_blank">🔗 View Project</a>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-icon"><i class="fas fa-gamepad"></i></span>
+          <div class="card-title">Play with me 🎮</div>
+          <div class="card-desc">
+            Rock Paper Scissors – a fun browser game!<br>
+            <a href="https://ankithaallu143.github.io/Rock_paper_sissor/" target="_blank">▶ Play Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="card-grid">
+        <div class="card"><span class="card-icon"><i class="fab fa-html5"></i></span><div class="card-title">HTML5</div></div>
+        <div class="card"><span class="card-icon"><i class="fab fa-css3-alt"></i></span><div class="card-title">CSS3</div></div>
+        <div class="card"><span class="card-icon"><i class="fab fa-js"></i></span><div class="card-title">JavaScript</div></div>
+        <div class="card"><span class="card-icon"><i class="fab fa-react"></i></span><div class="card-title">React.js</div></div>
+        <div class="card"><span class="card-icon"><i class="fab fa-java"></i></span><div class="card-title">Java</div></div>
+        <div class="card"><span class="card-icon"><i class="fas fa-code-branch"></i></span><div class="card-title">GIT</div></div>
+        <div class="card"><span class="card-icon"><i class="fas fa-laptop-code"></i></span><div class="card-title">Eclipse</div></div>
+        <div class="card"><span class="card-icon"><i class="fas fa-file-word"></i></span><div class="card-title">MS Office, Word, Excel, PPT</div></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card-grid">
+        <div class="card"><span class="card-icon"><i class="fas fa-graduation-cap"></i></span><div class="card-title">B.Tech in ECE</div><div class="card-desc">Sri Venkateswara College of Engineering</div><div class="card-extra">2021–2025 | 77.5% CGPA</div></div>
+        <div class="card"><span class="card-icon"><i class="fas fa-university"></i></span><div class="card-title">Intermediate (MPC)</div><div class="card-desc">Narayana Junior College</div><div class="card-extra">2019–2021 | 8.32 CGPA</div></div>
+        <div class="card"><span class="card-icon"><i class="fas fa-school"></i></span><div class="card-title">SSC</div><div class="card-desc">AP Residential School</div><div class="card-extra">2018–2019 | 9.7 CGPA</div></div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="card-grid">
+        <div class="card"><span class="card-icon"><i class="fas fa-certificate"></i></span><div class="card-title">Internet of Things (IoT)</div><div class="card-desc">NPTEL</div></div>
+      </div>
+    </section>
+
+    <!-- Internships -->
+    <section id="internships">
+      <h2>Internships</h2>
+      <div class="card-grid">
+        <div class="card"><span class="card-icon"><i class="fas fa-cloud"></i></span><div class="card-title">Cloud Computing Intern</div><div class="card-desc">Hands-on with AWS & Azure – VM deployment, storage, networking, and cost optimization.</div></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card-grid">
+        <div class="card"><span class="card-icon"><i class="fas fa-envelope"></i></span><div class="card-title">Email</div><div class="card-desc"><a href="mailto:alluankitha123@gmail.com">alluankitha123@gmail.com</a></div></div>
+        <div class="card"><span class="card-icon"><i class="fas fa-phone"></i></span><div class="card-title">Phone</div><div class="card-desc">+91 9347295336</div></div>
+        <div class="card"><span class="card-icon"><i class="fas fa-map-marker-alt"></i></span><div class="card-title">Location</div><div class="card-desc">Hyderabad</div></div>
+        <div class="card"><span class="card-icon"><i class="fab fa-linkedin"></i></span><div class="card-title">LinkedIn</div><div class="card-desc"><a href="#">LinkedIn Profile</a></div></div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Ankitha Allu | Portfolio</p>
+    © 2025 Ankitha Allu | All Rights Reserved
   </footer>
 
-  <!-- Link JS -->
+  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>
